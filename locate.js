@@ -53,6 +53,16 @@ $(function(){
       }); 
     // End of Weather api request
     $(".more_stats").show();
+    $("footer div ul li:nth-child:(2)").click(function(){
+      $("html, body").delay(500).animate({
+        scrollTop: $(".help").offset().top 
+    }, 500);
+    });
+    $("footer div ul li:nth-child:(4)").click(function(){
+      $("html, body").delay(500).animate({
+        scrollTop: $(".about").offset().top 
+    }, 500);
+    });
   });  
   // End of search location function 
 });
