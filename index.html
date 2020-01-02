@@ -19,8 +19,7 @@
 	<meta name="revisit-after" content="1 days">
 
 	<link rel="stylesheet" href="style.css">
-
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 
   <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
   <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
@@ -31,10 +30,10 @@
   <header>
     <nav>
       <ul>
-        <li>Geo-Search</li>  
-        <li>Help</li>
-        <li>Copyright</li>
-        <li>About</li>
+        <li> <a href="index.html">Geo-Search</a></li>  
+        <li> <a href="">Help</a> </li>
+        <li> <a href="">Copyright</a> </li>
+        <li> <a href="">About</a> </li>
       </ul>
     </nav>
   </header>
@@ -64,7 +63,7 @@
               <h4 id="windspeed"></h4>
               <h4 id="humidity"></h4>
             </div>
-            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+            <div id="fbshare" class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
           </div> 
       </section>
     </main>
@@ -77,19 +76,20 @@
 
   </div>
 
+  <div class="clr"></div>
   <div id="resultsC">
     <h2 id="intro" class="help">HELP</h2>
     <h3 id="help-text">
-      <p >1. To search for a place on the map input name of place in the search box at the left side bar of the website</p>
+      <p >1. To search for a place on the map, input name of place in the search box at the left side bar of the website</p>
       <p>2. Weather reports are displayed at the left side bar of the website</p>
       <p>3. You can convert temperature between kelvin, celsius and fahrenheit by clicking on the green toogle button</p>
     </h3>
   </div>  
 
   <div id="aboutus">
-      <h2 id="intro" class="about">ABOUT GEO-SEARCH</h2>
+      <h2 id="intro" class="abt" >ABOUT GEO-SEARCH</h2>
       <h3 id="help-text">
-        <p>Geo-Search is a tool developed by Abai Daniel Adewunmi to allow people search for places and extract information such as timezone, map and local weather conditions like temperature, wind speed, humidity, and precipitation.</p>
+        <p>Geo-Search is a tool developed by Abai Daniel Adewunmi to allow people search for places and extract information such as map and local weather conditions like temperature, wind speed, humidity, and precipitation.</p>
       </h3>
     </div>
   <script src="locate.js"></script>
