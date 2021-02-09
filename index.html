@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Geo-Search</title>
-  <meta name="title" content="Geo-Search">
+  <title>Weather Search</title>
+  <meta name="title" content="Weather Search">
 	<meta name="language" content="EN">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="description" content="Geo-Search is a tool that allows people to search for places and extract information such as timezone, map and local weather conditions like temperature, wind speed, humidity, and
-  precipitation.">
+	<meta name="description" content="Weather Search is a tool that allows people to search for places and extract information such as timezone, map and local weather conditions like temperature, wind speed and humidity">
 	<meta name="keywords" content="quiz game, web apps, web game, FarstBrain, android games, quiz, online quiz game">
 	<meta name="robots" content="index, follow">
-	<meta name="copyright" content="Daries Consult">
-	<meta name="author" content="ABAI DANIEL ADEWUNMI">
+	<meta name="copyright" content="Daries Media">
+	<meta name="author" content="Daries Media">
 	<meta name="creationdate" content="12th November, 2019">
 	<meta name="distribution" content="global">
 	<meta name="rating" content="general">
@@ -30,68 +29,60 @@
   <header>
     <nav>
       <ul>
-        <li> <a href="index.html">Geo-Search</a></li>  
-        <li> <a href="">Help</a> </li>
-        <li> <a href="">Copyright</a> </li>
-        <li> <a href="">About</a> </li>
+        <li><a href="index.html">Weather Search</a></li>  
+        <li>
+          <span><input type="text" name="search" id="search" placeholder="Search City" autofocus="autofocus"></span>
+        </li>
       </ul>
     </nav>
   </header>
 
   <div class="container">
     <main>
-      <section>
-        <div class="details">
-          <h2 id="intro">Welcome to Geo-Search</h2>
-          <h3 id="introS">Best tool to search for place or places on the map, as well as get weather informations</h3>
-          <br>
-          <div class="searchbar">
-            <div class="search">
-                <input type="text" name="search" id="search" placeholder="Enter Name of Place" autofocus="autofocus">
-            </div>
-            <button id="go">Go</button>
+      <div class="details">
+        <h3>Best online tool that allows people to search for places and extract information such as timezone, map and local weather conditions like temperature, wind speed and humidity</h3>
+      </div>
+        
+      <div class="more_stats">
+        <div class="stat_center">
+          <h3 id="interest"></h3>
+          <div id="resultsC">
+            <h4 id="temperature"></h4>
+            <h4><button id="fahrenheit">Convert Temperature to Fahrenheit</button></h4>
+            <br/>
+            <h4><button id="celsius">Click to Convert Temperature to Celsius</button></h4>
+            <h4 id="weatherC"></h4>
+            <h4 id="pressure"></h4>
+            <h4 id="windspeed"></h4>
+            <h4 id="humidity"></h4>
           </div>
-          
-          <div class="more_stats">
-            <h3><button id="interest"></button></h3> 
-            <div id="resultsC">
-              <h4 id="weatherC"></h4>
-              <h4 id="temperature"></h4>
-              <h4><button id="fahrenheit">Click to Convert Temperature to fahrenheit</button></h4>
-              <h4><button id="celsius">Click to Convert Temperature to Celsius</button></h4>
-              <h4 id="pressure"></h4>
-              <h4 id="windspeed"></h4>
-              <h4 id="humidity"></h4>
-            </div>
-            <div id="fbshare" class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-          </div> 
-      </section>
-    </main>
-    
-    <aside>
-      <section>
+        </div>
+        
         <div class="map" id="map"></div>
-      </section>
-    </aside>  
+      </div> 
 
+      
+    </main>
   </div>
 
-  <div class="clr"></div>
-  <div id="resultsC">
-    <h2 id="intro" class="help">HELP</h2>
-    <h3 id="help-text">
-      <p >1. To search for a place on the map, input name of place in the search box at the left side bar of the website</p>
-      <p>2. Weather reports are displayed at the left side bar of the website</p>
-      <p>3. You can convert temperature between kelvin, celsius and fahrenheit by clicking on the green toogle button</p>
-    </h3>
-  </div>  
+  <br/> 
+
+  <br/>
 
   <div id="aboutus">
-      <h2 id="intro" class="abt" >ABOUT GEO-SEARCH</h2>
-      <h3 id="help-text">
-        <p>Geo-Search is a tool developed by Abai Daniel Adewunmi to allow people search for places and extract information such as map and local weather conditions like temperature, wind speed, humidity, and precipitation.</p>
-      </h3>
-    </div>
+    <h3 id="info">About Weather Search</h3>
+    <h4 id="text">
+      <p>Weather Search is an online tool that allows people to search for places and extract information such as timezone, map and local weather conditions like temperature, wind speed and humidity</p>
+    </h4>
+  </div>
+  <br/>
+
+  <div id="footer">
+    <footer>
+        <h4 id="text">Copyright © <a href="https://www.dariesmedia.com/">Daries Media</a></h4>
+    </footer>
+  </div>
+
   <script src="locate.js"></script>
 </body>
 </html>
