@@ -3,12 +3,14 @@
   padding:0px;
 }
 
-body {
+html, body {
   background-color: rgb(252, 224, 245);
   line-height:1.6em;
   font-family:  Cambria, Cochin, Georgia, Times, Times New Roman, serif, Tahoma, Geneva, Verdana, sans-serif;
   color: #0d1137;
   font-size: 25px;
+  width: 100%;
+  height: 100%;
 }
 
 a  {
